@@ -1,6 +1,10 @@
 * {
-    border: red solid 1px;
-    max-width: 1440px;
+    /* border: blue solid 1px; */
+    /* max-width: 1440px;*/
+} 
+
+a {
+    text-decoration: none;
 }
 
 @font-face {
@@ -34,9 +38,27 @@ header {
 
 }
 
+.main-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 560px;
+    max-height: 700px;  
+    
+   }
+
+.main-page__box {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+} 
+
 
 h1 {
-    font-family: MotserratBold, Arial, Helvetica, sans-serif;
+    font-family: MotserratBold, sans-serif;
     font-size: 52px;
     color:white;
     width: 500px;
@@ -46,27 +68,13 @@ h1 {
    } 
 
 h3 {
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-family: Roboto, sans-serif;
     font-size: 24px;
     width: 450px;
     text-align: center;
     color: white;
    } 
-.main-page {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10%;
-    width: 100%;
-    height: 700px;  
-    
-   }
-
-.main-page__box {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    
-}   
+  
 
 
 .head {
@@ -111,10 +119,12 @@ h3 {
     height: 50px; 
     align-items: center;
     text-align: right;
-    justify-content: end; 
+    justify-content: end;
+    color: white; 
 }
 
 .headear-Log2 {
+    
     display: flex;
     width: 100px;
     height: 50px; 
@@ -124,6 +134,7 @@ h3 {
 }
 
 .headear-Sign{
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,7 +148,7 @@ h3 {
 .main-page__button {
     display: table-cell;
     vertical-align: middle;
-    font-family: MotserratBold, Arial, Helvetica, sans-serif;
+    font-family: MotserratBold, sans-serif;
     font-size: 14px;
     color: white;
     border-radius: 19px;
@@ -151,7 +162,8 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: MotserratBold, Arial, Helvetica, sans-serif;
+    font-family: MotserratBold, sans-serif;
+    font-weight: bold;
     font-size: 20px;
     color: white;
     }
@@ -161,17 +173,11 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
+    
 
 }
 
-.about__title {
-    font-family: MotserratBold, Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 25px;
-    }
+
 .about_container {
     display:flex;
     flex-direction: row;
@@ -184,29 +190,20 @@ h3 {
 .about_box {
     width: 300px;
     height: 400px;
-    margin: 5px;
+    
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: flex-start;
+    
    
 }    
-.about_box_img1 { 
-    
-    background-image: url('images/about_box1.jpg');
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-attachment: local;
-    filter: brightness(0.5);
-
-}
-
  
 .about_box_step_btn{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: MotserratBold, Arial, Helvetica, sans-serif;
+    font-family: MotserratBold, sans-serif;
     font-size: 10px;
     color: white;
     border-radius: 10px;
@@ -217,14 +214,14 @@ h3 {
 }
 
 .about_box__title {
-    font-family: MotserratBold, Arial, Helvetica, sans-serif;
+    font-family: MotserratBold, sans-serif;
     font-size: 24px;
     color: white;
     margin: 5px; 
 }
 
 .about_box_text {
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-family: Roboto, sans-serif;
     font-size: 14px;
     color: white;
     margin: 5px; 
@@ -238,7 +235,6 @@ h3 {
     z-index: -10;
     width: 300px;
     height: 400px;
-    margin: 5px;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -255,7 +251,6 @@ h3 {
     z-index: -10;
     width: 300px;
     height: 400px;
-    margin: 5px;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -273,7 +268,7 @@ h3 {
     z-index: -10;
     width: 300px;
     height: 400px;
-    margin: 5px;
+
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -291,15 +286,20 @@ h3 {
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 40px;
 }
 
-.partner_title {
+.title {
     text-align: center;
-    font-family: MotserratBold, Arial, Helvetica, sans-serif;
+    font-family: MotserratBold, sans-serif;
     font-size: 22px;
+    font-weight: bold;
     color: #333333;
+    margin-top: 50px;
+    margin-bottom: 20px;
 } 
+
+
 
 .parthner_container {
     display:flex;
@@ -313,10 +313,10 @@ h3 {
 .partner_box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: ;
     align-items: center;
     width: 220px;
-    height: 205px;
+    padding-top: 5px;
     margin: 5px;
 }
 
@@ -357,8 +357,8 @@ h3 {
 .partner_box_img3 {
     border-radius: 50%;
     z-index: -10;
-    width: 120px;
-    height: 120px;
+    min-width: 120px;
+    min-height: 120px;
     
     display: flex;
     flex-direction: column;
@@ -455,3 +455,241 @@ h3 {
     color: #333333;
     margin-top: 5px;
 }    
+
+.partner_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 192px;
+    height:40px ;
+    border: #ff4e50 solid 2px;
+    border-radius:22px ;
+    font-size: 14px;
+    color: #ff4e50;
+    font-family: MotserratBold, sans-serif;
+    margin: 10px;
+}
+
+.ideas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ideas_grid {
+    display: grid;
+    width: 940px;
+    height: 940px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px
+}
+
+.ideas_item1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.ideas_item2 {
+    grid-column: 2/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ideas_item3 {
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ideas_title {
+    text-align: center;
+    font-family: MotserratBold, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+} 
+
+.ideas_item_bg1 {
+    position: absolute;
+    background-image: url('images/grid_bg_1.jpg');
+    background-position: center;
+    background-size:cover;
+    z-index: -7;
+    width: 300px ;
+    height: 300px;
+    filter: brightness(0.5);
+}
+
+.ideas_item_bg2 {
+    position: absolute;
+    background-image: url('images/grid_bg_2.jpg');
+    background-position: center;
+    background-size:cover;
+    z-index: -7;
+    width: 300px ;
+    height: 300px;
+    filter: brightness(0.5);
+}
+
+.ideas_item_bg3 {
+    position: absolute;
+    background-image: url('images/grid_bg_3.jpg');
+    background-position: right;
+    background-size:cover;
+    z-index: -7;
+    width: 300px ;
+    height: 300px;
+    filter: brightness(0.5);
+}
+
+.ideas_item_bg4 {
+    position: absolute;
+    background-image: url('images/grid_bg_4.jpg');
+    background-position: right;
+    background-size:cover;
+    z-index: -7;
+    width: 300px ;
+    height: 300px;
+    filter: brightness(0.5);
+}
+
+.ideas_item_bg5 {
+    position: absolute;
+    background-image: url('images/grid_bg_5.jpg');
+    background-position: right;
+    background-size:cover;
+    z-index: -7;
+    width: 620px ;
+    height: 300px;
+    filter: brightness(0.6);
+}
+
+.ideas_item_bg6 {
+    position: absolute;
+    background-image: url('images/grid_bg_6.jpg');
+    background-position: right;
+    background-size:cover;
+    z-index: -7;
+    width: 620px ;
+    height: 300px;
+    filter: brightness(0.6);
+}
+
+.ideas_item_bg7 {
+    position: absolute;
+    background-image: url('images/grid_bg_7.jpg');
+    background-position: right;
+    background-size:cover;
+    z-index: -7;
+    width: 300px ;
+    height: 300px;
+    filter: brightness(0.5);
+}
+
+.serchParnersBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.searchParnersBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 192px;
+    height:40px ;
+    border: #ff4e50 solid 2px;
+    border-radius:22px ;
+    font-size: 14px;
+    background-color: #ff4e50;
+    color: white;
+    font-family: MotserratBold, sans-serif;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.serch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.parner_search_text {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #333333;
+    margin-top: 5px;
+}  
+
+.input_interests {
+    width: 200px;
+    height: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: #ff4e50 solid 4px;
+    margin-top: 25px;
+}
+
+nav {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 940px;
+    margin-top: 40px;
+}
+
+.nav_promo {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    text-transform: uppercase;
+    width: 115px;
+    height: 115px;
+    font-size: 16px;
+    color: #ff4e50;
+    font-family: MotserratBold, sans-serif;
+    font-weight: bold;
+}
+
+.nav_list {
+    list-style-type: none;
+    margin: 0px;
+    font-size: 14px;
+    font-family: MotserratBold, sans-serif;
+    font-weight: bold;
+    color:#333333;
+}
+
+.nav_list > li {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #cccccc;
+} 
+
+.nav_logo {
+    color: #cccccc;
+    text-transform: uppercase;
+    font-family: MotserratBold, sans-serif;
+    font-weight: bold;
+    
+    
+    
+    
+
+}
