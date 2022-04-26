@@ -1,5 +1,5 @@
 * {
-  /* border: blue solid 1px; */
+  border: blue solid 1px;
   /* max-width: 1440px; */
 }
 
@@ -69,17 +69,17 @@ h6 {
   padding: 5px;
 }
 
-.headear-box1 {
+.headear-boxLogo {
   width: 60%;
   height: 100px;
   margin: 5px;
 }
 
-.headear-box2 {
+.headear-boxLogin {
   width: 40%;
 }
 
-.headear-box3 {
+.headear-containerLogin {
   display: flex;
   max-width: 170px;
   height: 60px;
@@ -99,7 +99,7 @@ h6 {
   margin-left: 220px;
 }
 
-.headear__log {
+.headear__login {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -108,7 +108,7 @@ h6 {
   padding-top: 5px;
 }
 
-.headear-box4 {
+.headear-boxSign {
   display: flex;
 
   align-items: center;
@@ -717,18 +717,18 @@ nav {
       width: 100%;
     }
   
-    .headear-box1 {
+    .headear-boxLogo {
       width: 100%;
       height: 50px;
       margin: 0px;
       margin-top: 100px;
     }
   
-    .headear-box2 {
+    .headear-boxLogin {
       width: 100%;
     }
   
-    .headear-box3 {
+    .headear-containerLogin {
       max-width: 100%;
       height: 60px;
       margin: 0px;
@@ -746,11 +746,11 @@ nav {
       margin-left: 0px;
     }
   
-    .headear__log {
+    .headear__login {
       font-size: 14px;
     }
   
-    .headear-box4 {
+    .headear-boxSign {
       font-size: 14px;
     }
   
